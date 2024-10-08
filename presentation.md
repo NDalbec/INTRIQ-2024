@@ -5,14 +5,24 @@ title : Accurate Unsupervised Photon Counting from Transition Edge Sensor Signal
 author : Nicolas Dalbec-Constant
 paginate: true
 math : True
-class:
-  # - invert
-  - lead
+transition: fade
 ---
-
+<!-- 
+footer:  
+-->
 ## Visibility
 
-![bg contain 50%](assets/UMAP2d.png)
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+section {
+ font-family: 'Times', sans-serif;
+}
+</style>
+
+![bg contain 50%](assets/UMAP2d.pcharacteristicsng)
 
 ---
 
@@ -20,11 +30,63 @@ class:
 
 Nicolas Dalbec-Constant
 
+
 ---
 
-##
+## Some Features
 
-![bg contain 80%](assets/Area.png)
+#### Response time  : $\sim 10 \mu s$ 
+> L. A. Morais et al. (2024), doi: 10.22331/q-2024-05-23-1355.
+
+#### Efficiency : $\sim 98\%$ 
+> D. Fukuda et al. (2011), doi: 10.1364/OE.19.000870.
+
+#### Working temperature : $\sim 50-100 mK$ 
+> L. A. Morais et al. (2024), doi: 10.22331/q-2024-05-23-1355.
+
+#### Photon number range : 0 to 33 photons 
+> M. Eaton et al. (2023), doi: 10.1038/s41566-022-01105-9.
+
+---
+
+## Working Principle
+
+![width:700px center](assets/TransitionEdge.png)
+<p style="text-align:center;">Fig. 1 : Sketch of a TES's resistance variation with temperature.</p>
+
+---
+
+## Signals
+
+![width:700px center](assets/TracesUniform.png)
+<p style="text-align:center;">Fig. 2 : 3 000 TES signals.</p>
+
+---
+
+## Problem Formulation
+
+1. Signals                       |  2. Process           | 3. Photon Number Distribution
+:-------------------------------:|:---------------------:|:-------------------------:
+![fit](assets/TracesPoisson.png) |![fit](assets/Cube.svg)|![fit](assets/PhotonDistribution.png)
+
+
+---
+
+## Historical Methods (Maximum Value)
+
+1. Signals                     |  2. Process             | 3. Photon Number Distribution
+:-----------------------------:|:-----------------------:|:-------------------------:
+![fit](assets/TracesPoisson.png) |![fit](assets/Cube.svg)|![fit](assets/PhotonDistribution.png)
+
+
+---
+
+## Historical Methods (Maximum Value)
+
+1. Signals                     |  2. Process             | 3. Photon Number Distribution
+:-----------------------------:|:-----------------------:|:-------------------------:
+![fit](assets/TracesPoisson.png) |![fit](assets/Cube.svg)|![fit](assets/PhotonDistribution.png)
+
 
 ---
 
@@ -47,3 +109,7 @@ $$
 ## Test
 
 ![width:500px](assets/TomographyOfPhotonNumber.png)
+
+
+---
+

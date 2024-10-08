@@ -416,11 +416,18 @@ class gaussian_mixture():
 
                 if cluster_number:
                     for index, mean in enumerate(self.cluster_means[:-1]):
-                        # if index % 2 != 0:
-                        plt.text(mean, self.cluster_weights[index]*y_gauss[index,index]+1, index, color = self.text_color, size=10)
+                        plt.text(mean, 
+                                self.cluster_weights[index]*y_gauss[index,index]+1, 
+                                index, 
+                                color = self.text_color, 
+                                size=10)
     
                     last = self.cluster_means.shape[0]-1
-                    plt.text(self.cluster_means[-1], y_gauss[last,last]+0.2, f'{last}+', color = self.text_color, size=10)
+                    plt.text(self.cluster_means[-1], 
+                            self.cluster_weights[index]*y_gauss[last,last]+0.2, 
+                            f'{last}+', 
+                            color = self.text_color, 
+                            size=10)
 
                 if plot_scale == 'log':
                     ylim = (self.min_log, 1e2)
