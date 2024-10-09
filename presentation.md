@@ -5,7 +5,6 @@ title : Accurate Unsupervised Photon Counting from Transition Edge Sensor Signal
 author : Nicolas Dalbec-Constant
 paginate: true
 math : True
-transition: fade
 ---
 <!-- 
 footer:  
@@ -62,6 +61,25 @@ Nicolas Dalbec-Constant
 <p style="text-align:center;">Fig. 2 : 3 000 TES signals.</p>
 
 ---
+
+## Historical Methods
+
+1. Signals                     |  2. Latent Space             | 3. Distribution
+:-----------------------------:|:-----------------------:|:-------------------------:
+![fit](assets/Trace_MAX.svg) |![fit](assets/Maximum-Value.svg)|![fit](assets/Distribution_MAX.svg)
+![fit](assets/Trace_AREA.svg) |![fit](assets/Area.svg)|![fit](assets/Distribution_AREA.svg)
+
+---
+
+## Principal Component Analysis (PCA)
+
+1. Signals                     |  2. Latent Space             | 3. Distribution
+:-----------------------------:|:-----------------------:|:-------------------------:
+![fit](assets/Trace_AREA.svg) |![fit](assets/Area.svg)|![fit](assets/Distribution_AREA.svg)
+![fit](assets/Trace_PCA.svg) |![fit](assets/PCA.svg)|![fit](assets/Distribution_PCA.svg)
+
+---
+
 
 ## Problem Formulation
 

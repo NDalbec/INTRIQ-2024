@@ -474,7 +474,7 @@ class gaussian_mixture():
                 plt.ylim(ylim)
 
             if text is not None:
-                file_name = f'{save_path}/{text}.png'
+                file_name = f'{save_path}/{text}.svg'
                 if self.dim == 1:
                     xt, yt = 0.9 * xlim[1], 0.7 * ylim[1]
                 elif self.dim == 2:
@@ -482,7 +482,7 @@ class gaussian_mixture():
 
                 plt.text(xt, yt, text, ha='right', va='top',)
             else:
-                file_name = f'{save_path}/density.png'
+                file_name = f'{save_path}/density.svg'
 
             if save_path is not None:
                 plt.savefig(file_name, bbox_inches='tight')
