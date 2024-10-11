@@ -1,7 +1,7 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import os
 from typing import Union
-import matplotlib.pyplot as plt
 
 from scipy.signal import butter, filtfilt
 from scipy.integrate import simpson

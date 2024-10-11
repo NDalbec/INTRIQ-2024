@@ -424,7 +424,7 @@ class gaussian_mixture():
     
                     last = self.cluster_means.shape[0]-1
                     plt.text(self.cluster_means[-1], 
-                            self.cluster_weights[index]*y_gauss[last,last]+0.2, 
+                            self.cluster_weights[index]*y_gauss[last,last]+1, 
                             f'{last}+', 
                             color = self.text_color, 
                             size=10)
@@ -462,11 +462,11 @@ class gaussian_mixture():
                 if cluster_number:
                     for index, mean in enumerate(self.cluster_means[:-1]):
                         # if index % 2 != 0:
-                        plt.text(mean[0]+0.03, mean[1]+1, index, color = self.text_color, size=10)
+                        plt.text(mean[0], mean[1]+0.03, index, color = self.text_color, size=10)
     
                     last = self.cluster_means.shape[0]-1
                     mean = self.cluster_means[-1]
-                    plt.text(mean[0]+0.03, mean[1], f'{last}+', color = self.text_color, size=10)
+                    plt.text(mean[0], mean[1]+0.03, f'{last}+', color = self.text_color, size=10)
 
                 plt.xlabel(r'$s_1$')
                 plt.ylabel(r'$s_2$')
@@ -485,7 +485,7 @@ class gaussian_mixture():
                 file_name = f'{save_path}/density.svg'
 
             if save_path is not None:
-                plt.savefig(file_name, bbox_inches='tight')
+                plt.savefig(file_name, bbox_inches='tight', pad_inches = 0)
                 plt.show()
             else:
                 plt.show()
