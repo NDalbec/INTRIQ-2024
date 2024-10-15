@@ -5,7 +5,6 @@ title : Accurate Unsupervised Photon Counting from Transition Edge Sensor Signal
 author : Nicolas Dalbec-Constant
 paginate: true
 math : True
-# class: invert
 ---
 
 <style>
@@ -68,6 +67,31 @@ Nicolas Dalbec-Constant
 
 ---
 
+## Problem Formulation
+
+```python
+def function(Signals : np.array):
+  '''
+  Function to transform TES signals into photon numbers.
+
+  Parameters
+  ----------
+  Signals : np.array
+    TES signal matrix of shape 
+    (number of signals, number of time steps in each signal)
+
+  Returns
+  -------
+  Photon_Numbers : np.array
+    Array that contains the photon number associated with each 
+    signal in `Signals`.
+
+  '''
+  return Photon_Numbers
+```
+
+---
+
 <!-- 
 footer: L. A. Morais et al., “Precisely determining photon-number in real time,” Quantum 1355, May 2024.
 -->
@@ -114,31 +138,6 @@ footer: P. C. Humphreys et al., “Tomography of photon-number resolving continu
 <small>
   Each signal can be associated with a class and the true label of each sample is unknown.
 </small>
-
----
-
-## Problem Formulation
-
-```python
-def function(Signals : np.array):
-  '''
-  Function to transform TES signals into photon numbers.
-
-  Parameters
-  ----------
-  Signals : np.array
-    TES signal matrix of shape 
-    (number of signals, number of time steps in each signal)
-
-  Returns
-  -------
-  Photon_Numbers : np.array
-    Array that contains the photon number associated with each 
-    signal in `Signals`.
-
-  '''
-  return Photon_Numbers
-```
 
 ---
 
@@ -261,9 +260,9 @@ footer: ''
 
 ---
 
-## Parametric Implementation of UMAP and t-SNE
+## Parametric Implementation of UMAP
 
-![width:900px center](assets/)
+![width:900px center](src/Results/Confidence_Poisson.svg)
 
 ---
 
