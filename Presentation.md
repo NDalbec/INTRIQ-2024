@@ -272,3 +272,16 @@ footer: ''
 - Dimensionality reduction is useful to understand data.
 - Nonlinear techniques can improve the photon number resolution of TESs.
 - Neural networks provide a precise and efficient platform to achieve photon number prediction.
+
+---
+
+## Code Availability
+
+<center>
+
+Presentation                                          | <center> Full Research   
+:----------------------------------------------------:|:-----------------------
+![width:300px center](assets/github_presentation.png) |![width:300px center](assets/github_poly.png)
+INTRIQ-2024                                           | Photon-Number-Classification
+
+</center>
